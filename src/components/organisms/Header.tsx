@@ -4,12 +4,12 @@ import { HButtonList } from '../molecules/ButtonList';
 import ThemeSwitch from "../molecules/ThemeSwitch";
 
 const NavigationButtons = [
-  { label: "Home", href: "/home" },
-  { label: "About", href: "/about" },
-  { label: "Projects", href: "/projects" },
-  { label: "Contact", href: "/contact" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Portal", href: "/portal" },
+  { content: "Home", href: "/home" },
+  { content: "About", href: "/about" },
+  { content: "Projects", href: "/projects" },
+  { content: "Contact", href: "/contact" },
+  { content: "FAQ", href: "/faq" },
+  { content: "Portal", href: "/portal" },
 ];
 
 export function Header() {
