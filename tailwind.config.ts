@@ -8,8 +8,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#ffffff',    // default bg
-        foreground: '#171717',    // default text
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+        accent: 'var(--color-accent)',
+        text: 'var(--color-text)',
+        muted: 'var(--color-muted)',
+        background: 'var(--color-background)',
       },
     },
   },
