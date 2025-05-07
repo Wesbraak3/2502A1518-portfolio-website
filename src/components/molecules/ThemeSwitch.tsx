@@ -1,5 +1,7 @@
 'use client'
 
+import { Button } from '../atoms/Buttons'
+
 import { FiSun, FiMoon } from "react-icons/fi"
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
@@ -24,10 +26,21 @@ export default function ThemeSwitch() {
   )
 
   if (resolvedTheme === 'dark') {
-    return <FiSun onClick={() => setTheme('light')} />
+    return <Button label='' icon={<FiSun />} action={() => setTheme('light')} className='rounded-full'/>
   }
+  
+  /*
+  if (resolvedTheme === 'dark') {
+    return (
+      <>
+      <h1 onClick={() => setTheme('light')} > dadad </h1>
+      <FiSun/>
+      </>
+    )
+  }
+  */
 
   if (resolvedTheme === 'light') {
-    return <FiMoon onClick={() => setTheme('dark')} />
+    return <Button label='' icon={<FiMoon />} action={() => setTheme('dark')} className='rounded-full'/>
   }
 }

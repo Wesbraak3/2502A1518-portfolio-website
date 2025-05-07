@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button, StyledButton } from '../atoms/Buttons'
+import { Button } from '../atoms/Buttons'
 import { Divider } from '../atoms/Divider'; 
 
 interface ButtonListProps {
@@ -22,7 +22,7 @@ export function VButtonList({ buttons }: ButtonListProps) {
       <div className="flex flex-col">
         {buttons.map(({ label, href }, index) => (
           <React.Fragment key={`${index}-${label}`}>
-            <Button label={label} href={href} />
+            <Button label={label} href={href} className="w-full"/>
             {index < buttons.length - 1 && <Divider />} {/* Add Divider after each button except the last one */}
           </React.Fragment>
         ))}
