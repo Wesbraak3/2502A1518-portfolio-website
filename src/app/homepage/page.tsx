@@ -1,27 +1,17 @@
 
-import ThemeSwitch from '@/components/molecules/ThemeSwitch'
 import { Header } from '@/components/organisms/Header'
 
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function Home() {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <Header/>
-      <body>
-        <div className='grid items-center justify-items-center min-h-screen'>
-          <ThemeSwitch/>
-          
-          <div className="p-4">
-            <h1 className="text-xl">Hello, Tailwind Themes!</h1>
-            <p>Switch themes by toggling the dark mode.</p>
-          </div>
-          {children}
+    <>
+      <Header />
+      <div className="grid items-center justify-items-center min-h-screen">
+        <div className="p-4">
+          <h1 className="text-xl">Hello, Tailwind Themes!</h1>
+          <p>Switch themes by toggling the dark mode.</p>
         </div>
-      </body>
-    </html>
-  )
+      </div>
+    </>
+  );
 }
