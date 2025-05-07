@@ -2,19 +2,20 @@
 
 interface ButtonProps {
     label: string;
-    href?: string; // optional if you may want to render a button without a link
+    href?: string;
+    className?: string;
 }
 
-export function Button({ label, href }: ButtonProps) {
+export function Button({ label, href, className }: ButtonProps) {
     return href ? (
         <a
             href={href}
-            className="inline-block justify-center px-4 py-2 bg-primary text-text hover:bg-accent hover:text-primary break-words whitespace-normal"
+            className={`inline-flex justify-center items-center px-4 py-2 text-text hover:bg-primary hover:text-background break-words whitespace-normal ${className}`}
         >
             {label}
         </a>
     ) : (
-        <button className="justify-center px-4 py-2 bg-primary text-text hover:bg-accent hover:text-primary break-words whitespace-normal">
+        <button className="inline-flex justify-center items-center px-4 py-2 text-text hover:bg-primary hover:text-background break-words whitespace-normal">
             {label}
         </button>
     );
