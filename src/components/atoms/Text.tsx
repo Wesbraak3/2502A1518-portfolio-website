@@ -7,7 +7,7 @@ interface ParagraphProps {
 
 export function Text({ children, className = "" }: ParagraphProps) {
   return (
-    <p className={`text-base text-text ${className}`}>
+    <p className={`text-base text-text whitespace-normal break-words ${className}`}>
       {children}
     </p>
   );
