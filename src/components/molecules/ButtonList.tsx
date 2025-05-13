@@ -1,17 +1,18 @@
 import React from "react";
+import { ReactNode } from "react";
 
-import { Button } from '../atoms/Buttons'
+import { HeaderButton } from '../atoms/Button'
 import { Divider } from '../atoms/Divider'; 
 
 interface ButtonListProps {
-    buttons: { label: string; href?: string }[];
+    buttons: { content: ReactNode; href?: string }[];
 }
 
 export function HButtonList({ buttons }: ButtonListProps) {
     return (
         <div className="flex gap-4 justify-center">
-          {buttons.map(({ label, href }, index) => (
-            <Button key={`${label}-${index}`} label={label} href={href} className="rounded"/>
+          {buttons.map(({ content, href }, index) => (
+            <HeaderButton key={`${content}-${index}`} content={content} href={href} className="rounded"/>
           ))}
         </div>
     );
@@ -20,9 +21,9 @@ export function HButtonList({ buttons }: ButtonListProps) {
 export function VButtonList({ buttons }: ButtonListProps) {
     return (
       <div className="flex flex-col">
-        {buttons.map(({ label, href }, index) => (
-          <React.Fragment key={`${index}-${label}`}>
-            <Button label={label} href={href} className="w-full"/>
+        {buttons.map(({ content, href }, index) => (
+          <React.Fragment key={`${index}-${content}`}>
+            <HeaderButton content={content} href={href} className="w-full"/>
             {index < buttons.length - 1 && <Divider />} {/* Add Divider after each button except the last one */}
           </React.Fragment>
         ))}
