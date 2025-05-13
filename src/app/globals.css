@@ -4,18 +4,16 @@
 
 
 :root {
-  --color-primary: #eea30a;
-  --color-secondary: #1d9dd8;
-  --color-accent: #31be18;
+  --color-primary: #1d9dd8;
+  --color-accent: #eea30a;
   --color-text: #111827;
   --color-muted: #6b7280;
   --color-background: #ffffff;
 }
 
 .dark {
-  --color-primary: #1d9dd8;
-  --color-secondary: #eea30a;
-  --color-accent: #31be18;
+  --color-primary: #eea30a;
+  --color-accent: #1d9dd8;
   --color-text: #f9fafb;
   --color-muted: #9ca3af;
   --color-background: #0a0a0a;

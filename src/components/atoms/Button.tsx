@@ -7,12 +7,12 @@ interface ButtonProps {
     className?: string;
 }
 
-export function Button({ content, href, action, className }: ButtonProps) {
+export function HeaderButton({ content, href, action, className }: ButtonProps) {
   const boolean = false;
 
   const baseClasses = "inline-flex items-center justify-center px-4 py-2";
-  const txtClasses = "text-text font-bold hover:text-secondary break-words whitespace-normal";
-  const bgClasses = "hover:bg-primary";
+  const txtClasses = "select-none text-text font-bold hover:text-primary break-words whitespace-normal";
+  const bgClasses = "bg-background";
   
   const themeClasses = `${baseClasses} ${txtClasses} ${boolean ? bgClasses : ""}`;
 

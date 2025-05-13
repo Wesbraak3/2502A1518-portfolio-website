@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '../atoms/Button'
+import { HeaderButton } from '../atoms/Button'
 
 import { FiSun, FiMoon } from "react-icons/fi"
 import { useState, useEffect } from 'react'
@@ -13,14 +13,14 @@ export default function ThemeSwitch() {
   useEffect(() =>  setMounted(true), [])
 
   if (!mounted) return (
-    <Button content={<FiSun/>} className='rounded-full'/>
+    <HeaderButton content={<FiSun/>} className='rounded-full'/>
   )
 
   if (resolvedTheme === 'dark') {
-    return <Button content={<FiSun/>} action={() => setTheme('light')} className='rounded-full'/>
+    return <HeaderButton content={<FiSun/>} action={() => setTheme('light')} className='rounded-full'/>
   }
   
   if (resolvedTheme === 'light') {
-    return <Button content={<FiMoon/>} action={() => setTheme('dark')} className='rounded-full'/>
+    return <HeaderButton content={<FiMoon/>} action={() => setTheme('dark')} className='rounded-full'/>
   }
 }
