@@ -6,15 +6,21 @@ import { Text } from "../atoms/Text";
 import { Hyperlink } from "../atoms/Hyperlink";
 
 interface ProjectCardProps {
-    title: string;
-    description: string;
-    image: string;
-    link: string;
-}
-
-export function ProjectCard({ title, description, image, link }: ProjectCardProps) {
+    title?: string;
+    image?: string;
+    description?: string;
+    link?: string;
+    classname?: string;
+  }
+export function ProjectCard({
+    title = "Project Title",
+    image = "/",
+    description = "Description of the project",
+    link = "/",
+    classname = ""
+  }: ProjectCardProps) {
     return (
-        <div className="overflow-hidden rounded-lg border bg-background shadow-md">
+        <div className={`overflow-hidden rounded-lg border bg-background shadow-md w-full ${classname}`}>
         {/* Banner Image */}
         <BannerIMG image={image} alt={title} />
 
