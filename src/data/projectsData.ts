@@ -5,6 +5,7 @@ export const projects = [
       description: "A tool that automates tasks using AI.",
       link: "/projects/ai-tool",
       date: "2024-11-10",
+      category: "Industrial",
     },
     {
       title: "Design Portfolio",
@@ -12,6 +13,7 @@ export const projects = [
       description: "A personal branding design portfolio.",
       link: "/projects/design",
       date: "2023-09-15",
+      category: "Game dev",
     },
     {
       title: "Wes Portfolio",
@@ -19,5 +21,6 @@ export const projects = [
       description: "This very portfolio you're viewing now.",
       link: "/projects/portfolio",
       date: "2025-01-05",
+      category: "Home",
     },
   ];

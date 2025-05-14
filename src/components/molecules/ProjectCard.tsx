@@ -1,7 +1,7 @@
 import React from "react";
 
 import { BannerIMG } from "../atoms/Banners";
-import { Title } from "../atoms/Title";
+import { Header_2 } from "../atoms/Titles";
 import { Text } from "../atoms/Text";
 import { Hyperlink } from "../atoms/Hyperlink";
 
@@ -26,7 +26,7 @@ export function ProjectCard({
 
         {/* Content */}
         <div className="p-4 flex items-center flex-col gap-2 justify">
-            <Title size="xl">{title}</Title>
+            <Header_2>{title}</Header_2>
 
             <Text className="text-xl whitespace-normal break-words">
                 {description}
