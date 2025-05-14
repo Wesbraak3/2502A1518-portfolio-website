@@ -4,7 +4,7 @@ import { ThemeProviders } from '@/components/providers'
 import { Header } from '@/components/organisms/Header'
 
 const NavigationButtons = [
-  { content: "Home", href: "/home" },
+  { content: "Home", href: "/" },
   { content: "About", href: "/about" },
   { content: "Projects", href: "/projects" },
   { content: "Contact", href: "/contact" },
