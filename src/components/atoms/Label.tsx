@@ -7,7 +7,7 @@ interface LabelProp {
 
 export function Label({ label, className = "" }: LabelProp) {
   return (
-    <label className={`block text-sm font-medium text-primairy ${className}`}>
+    <label className={`block text-m text-text ${className}`}>
       {label}
     </label>
   );

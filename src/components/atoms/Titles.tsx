@@ -23,8 +23,8 @@ export function Header_2({ children, className = "" }: TitleProps) {
 
 export function Header_3({ children, className = "" }: TitleProps) {
   return (
-    <h2 className={`${className} font-bold text-text text-2xl`}>
+    <h3 className={`${className} font-bold text-text text-2xl`}>
       {children}
-    </h2>
+    </h3>
   );
 }

@@ -1,5 +1,6 @@
 export const projects = [
     {
+      id: 0,
       title: "AI Tool",
       image: "/images/ai-tool.png",
       description: "A tool that automates tasks using AI.",
@@ -8,6 +9,7 @@ export const projects = [
       category: "Industrial",
     },
     {
+      id: 1,
       title: "Design Portfolio",
       image: "/images/design.png",
       description: "A personal branding design portfolio.",
@@ -16,6 +18,7 @@ export const projects = [
       category: "Game dev",
     },
     {
+      id: 2,
       title: "Wes Portfolio",
       image: "/images/portfolio.png",
       description: "This very portfolio you're viewing now.",

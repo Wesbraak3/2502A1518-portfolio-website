@@ -1,10 +1,12 @@
+// components/atoms/Banners.tsx
+
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface BannerIMGProps {
-  image: string;
+  image?: string;
   alt?: string;
 }
 
@@ -12,6 +14,10 @@ const PLACEHOLDER = '/PlaceholderImage.svg';
 
 export function BannerIMG({ image, alt = 'Banner image' }: BannerIMGProps) {
   const [imgSrc, setImgSrc] = useState(image || PLACEHOLDER);
+
+  useEffect(() => {
+    setImgSrc(image || PLACEHOLDER);
+  }, [image]);
 
   return (
     <div className="relative w-full h-32 overflow-hidden select-none">

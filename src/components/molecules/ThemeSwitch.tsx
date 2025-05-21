@@ -1,10 +1,9 @@
-'use client'
+'use client';
 
-import { HeaderButton } from '../atoms/Button'
-
-import { FiSun, FiMoon } from "react-icons/fi"
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
+import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
+import { FiSun, FiMoon } from 'react-icons/fi';
+import { Button } from '../atoms/Button';
 
 export default function ThemeSwitch() {
   const [mounted, setMounted] = useState(false)
@@ -12,15 +11,19 @@ export default function ThemeSwitch() {
 
   useEffect(() =>  setMounted(true), [])
 
-  if (!mounted) return (
-    <HeaderButton content={<FiSun/>} className='rounded-full'/>
-  )
-
-  if (resolvedTheme === 'dark') {
-    return <HeaderButton content={<FiSun/>} action={() => setTheme('light')} className='rounded-full'/>
+  if (!mounted) {
+    return <Button label={<FiSun/>} className='rounded-full'/>
   }
   
-  if (resolvedTheme === 'light') {
-    return <HeaderButton content={<FiMoon/>} action={() => setTheme('dark')} className='rounded-full'/>
-  }
+  const isDark = resolvedTheme === 'dark';
+  const icon = isDark ? <FiSun /> : <FiMoon />;
+  const toggleTheme = () => setTheme(isDark ? 'light' : 'dark')
+  
+  return (
+    <Button
+      label={icon}
+      onClick={toggleTheme}
+      className="rounded-full"
+    />
+  );
 }

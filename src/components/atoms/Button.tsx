@@ -1,28 +1,38 @@
-import { ReactNode } from "react";
+// components/atoms/Button.tsx
+
+import React from "react";
+import Link from "next/link";
 
 interface ButtonProps {
-    content: ReactNode;
-    href?: string;
-    action?: () => void;
-    className?: string;
+  label: React.ReactNode;
+  href?: string;
+  type?: "button" | "submit" | "reset";
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  className?: string;
 }
 
-export function HeaderButton({ content, href, action, className }: ButtonProps) {
-  const boolean = false;
+export const Button: React.FC<ButtonProps> = ({
+  label,
+  href,
+  type = "button",
+  onClick,
+  className,
+}) => {
+  const baseClasses =
+    "inline-flex items-center justify-center px-4 py-2 select-none font-bold text-text hover:text-primary rounded";
+  const combinedClasses = `${baseClasses} ${className ?? ""}`;
 
-  const baseClasses = "inline-flex items-center justify-center px-4 py-2";
-  const txtClasses = "select-none text-text font-bold hover:text-primary break-words whitespace-normal";
-  const bgClasses = "bg-background";
-  
-  const themeClasses = `${baseClasses} ${txtClasses} ${boolean ? bgClasses : ""}`;
+  if (href) {
+    return (
+      <Link href={href} className={combinedClasses}>
+        {label}
+      </Link>
+    );
+  }
 
-  return href ? (
-    <a href={href} className={`${themeClasses} ${className ?? ""}`}>
-      {content}
-    </a>
-  ) : (
-    <button onClick={action} className={`${themeClasses} ${className ?? ""}`}>
-      {content}
+  return (
+    <button type={type} onClick={onClick} className={combinedClasses}>
+      {label}
     </button>
   );
-}
+};

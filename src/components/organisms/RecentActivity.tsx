@@ -10,14 +10,13 @@ export function RecentActivity() {
     .slice(0, 4);
 
   return (
-    <section className="mb-8">
-      
+    <section className="w-[80%] mx-auto">
       <Header_1 className="text-center mb-6">Recent Activity</Header_1>
-      
-      <div className={`grid grid-cols-1 sm:grid-cols-2 gap-6`}>
-        {recentProjects.map((project, index) => (
+
+      <div className="grid grid-cols-2 gap-6">
+        {recentProjects.map((project) => (
           <ProjectCard
-            key={index}
+            key={project.id || project.title}
             title={project.title}
             image={project.image}
             description={project.description}
