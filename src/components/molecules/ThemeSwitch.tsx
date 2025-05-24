@@ -23,7 +23,7 @@ export default function ThemeSwitch() {
     <Button
       label={icon}
       onClick={toggleTheme}
-      className="rounded-full"
+      className="rounded-full hover:text-primary"
     />
   );
 }

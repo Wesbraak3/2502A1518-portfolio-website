@@ -28,10 +28,10 @@ export default function ProjectsPage() {
           {categories.map(category => (
             <button
               key={category}
-              className={`px-4 py-2 rounded-full border text-sm ${
+              className={`px-4 py-2 rounded-full border-2 text-sm ${
                 selectedCategory === category
-                  ? "bg-primary text-background"
-                  : "bg-background text-text"
+                  ? "border-accent bg-accent text-background font-bold"
+                  : "border-primary bg-background text-text hover:bg-primary hover:text-background"
               }`}
               onClick={() => setSelectedCategory(category)}
             >

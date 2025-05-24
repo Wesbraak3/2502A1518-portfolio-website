@@ -14,6 +14,7 @@ export function HeaderButtons({ buttons }: HeaderButtonsProps) {
           key={`${content}-${index}`}
           label={content}
           href={href}
+          className="hover:text-primary"
         />
       ))}
     </div>

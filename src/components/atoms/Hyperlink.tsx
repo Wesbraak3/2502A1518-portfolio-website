@@ -18,7 +18,7 @@ export function Hyperlink({
 }: HyperlinkProps) {
   return (
     <Link href={href}
-      className={`text-primary hover:underline ${className}`}
+      className={`text-primary hover:underline hover:text-accent ${className}`}
       target={target}
     >
       {children}
