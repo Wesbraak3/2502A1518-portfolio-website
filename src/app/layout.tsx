@@ -8,8 +8,8 @@ const NavigationButtons = [
   { content: "About", href: "/about" },
   { content: "Projects", href: "/projects" },
   { content: "Contact", href: "/contact" },
-  { content: "FAQ", href: "/faq" },
-  { content: "Portal", href: "/portal" },
+  // { content: "FAQ", href: "/faq" },
+  // { content: "Portal", href: "/portal" },
 ];
 
 export default function RootLayout({

@@ -1,19 +1,27 @@
 import React from "react";
-
+import Link from "next/link";
 
 interface HyperlinkProps {
-    href: string;
-    children: React.ReactNode;
-    className?: string;
-    target?: "_blank" | "_self" | "_parent" | "_top";
-    rel?: string;
-  }
+  href: string;
+  children: React.ReactNode;
+  className?: string;
+  target?: string;
+  rel?: string;
+}
 
-
-  export function Hyperlink({ href, children, className = "", target = "_self", rel }: HyperlinkProps) {
-    return (
-      <a href={href} className={`text-primary hover:underline ${className}`} target={target} rel={rel}>
-        {children}
-      </a>
-    );
-  }
+export function Hyperlink({
+  href,
+  children,
+  className = "",
+  target,
+  rel,
+}: HyperlinkProps) {
+  return (
+    <Link href={href}
+      className={`text-primary hover:underline hover:text-accent ${className}`}
+      target={target}
+    >
+      {children}
+    </Link>
+  );
+}

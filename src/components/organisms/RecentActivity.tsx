@@ -1,17 +1,29 @@
 import React from "react";
 
-import { ProjectCard } from '../molecules/ProjectCard';
+import { Header_1 } from "@/components/atoms/Titles";
+import { ProjectCard } from "@/components/molecules/ProjectCard";
+import { projects } from "@/data/projectsData";
 
-interface RecentActivityProp {
-    
-}
+export function RecentActivity() {
+  const recentProjects = [...projects]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 4);
 
-export function RecentActivity({ }: RecentActivityProp) {
   return (
-    <section className="flex flex-col items-center space-y-6 w-[80%] mx-auto">
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+    <section className="w-[80%] mx-auto">
+      <Header_1 className="text-center mb-6">Recent Activity</Header_1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {recentProjects.map((project) => (
+          <ProjectCard
+            key={project.id || project.title}
+            title={project.title}
+            image={project.image}
+            description={project.description}
+            link={project.link}
+          />
+        ))}
+      </div>
     </section>
   );
 }

@@ -5,7 +5,7 @@
 
 :root {
   --color-primary: #1d9dd8;
-  --color-accent: #eea30a;
+  --color-accent: #156c95;
   --color-text: #111827;
   --color-muted: #6b7280;
   --color-background: #ffffff;
@@ -13,8 +13,8 @@
 
 .dark {
   --color-primary: #eea30a;
-  --color-accent: #1d9dd8;
-  --color-text: #f9fafb;
+  --color-accent: #eea20acc;
+  --color-text: #f1f1f1;
   --color-muted: #9ca3af;
   --color-background: #0a0a0a;
 }
@@ -29,4 +29,25 @@ body {
 .dark body { 
   background-color: #000000;
   color: var(--color-text);
+}
+
+
+
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.enchanted-gradient-text {
+  background: linear-gradient(270deg, #60a5fa, #a78bfa, #f472b6, #60a5fa);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 3s linear infinite;
 }
