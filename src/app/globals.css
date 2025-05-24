@@ -2,20 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #1d9dd8;
+  --color-accent: #156c95;
+  --color-text: #111827;
+  --color-muted: #6b7280;
+  --color-background: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.dark {
+  --color-primary: #eea30a;
+  --color-accent: #eea20acc;
+  --color-text: #f1f1f1;
+  --color-muted: #9ca3af;
+  --color-background: #0a0a0a;
+}
+
+/* light mode */ 
+body { 
+  background-color: #ffffff;
+  color: var(--color-text);
+}
+
+/* dark mode */
+.dark body { 
+  background-color: #000000;
+  color: var(--color-text);
+}
+
+
+
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.enchanted-gradient-text {
+  background: linear-gradient(270deg, #60a5fa, #a78bfa, #f472b6, #60a5fa);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 3s linear infinite;
 }
