@@ -35,7 +35,7 @@ export function ProjectCard({
 
         <Text className="mt-2">
           See more by clicking{" "}
-          <Hyperlink href={link} target="_blank" rel="noopener noreferrer">
+          <Hyperlink href={link} target="_blank">
             here
           </Hyperlink>
           .

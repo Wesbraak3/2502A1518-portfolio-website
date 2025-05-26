@@ -6,7 +6,6 @@ interface HyperlinkProps {
   children: React.ReactNode;
   className?: string;
   target?: string;
-  rel?: string;
 }
 
 export function Hyperlink({
@@ -14,7 +13,6 @@ export function Hyperlink({
   children,
   className = "",
   target,
-  rel,
 }: HyperlinkProps) {
   return (
     <Link href={href}
