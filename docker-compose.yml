@@ -12,5 +12,6 @@ services:
     container_name: cloudflared
     depends_on:
       - web
+    # niet vergeten token moet .env zijn
     command: tunnel --no-autoupdate run --token eyJhIjoiY2JiNTkzNzRkMjliMjUzMGM4Y2Y0NzFkOTdmYzY2NWMiLCJ0IjoiMGI5MzI0MDQtN2FlZi00N2UxLWEzZTgtM2YyM2U1YTIxZmI1IiwicyI6IlpUaGpObUl6TUdJdE5qa3pOaTAwWmpCbExXSTJNalF0TkRoaE1qYzVaREkxWlRrNSJ9
     restart: unless-stopped
