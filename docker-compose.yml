@@ -26,22 +26,11 @@ services:
       - external-bridge 
     restart: unless-stopped
 
-  # cloudflared:
-  #   image: cloudflare/cloudflared:latest
-  #   environment:
-  #     - TUNNEL_TOKEN=${TUNNEL_TOKEN}
-  #   depends_on:
-  #     - web
-  #   command: tunnel run
-  #   networks:
-  #     - external-bridge
-  #   restart: unless-stopped
+volumes:
+  postgres_data:
 
-  volumes:
-    postgres_data:
-
-  networks: 
-    internal-network:
-      external: false
-    external-bridge:
-      external: true
+networks: 
+  internal-network:
+    external: false
+  external-bridge:
+    external: true
