@@ -7,9 +7,7 @@ const NavigationButtons = [
   { content: "Home", href: "/" },
   { content: "About", href: "/about" },
   { content: "Projects", href: "/projects" },
-  { content: "Contact", href: "/contact" },
-  // { content: "FAQ", href: "/faq" },
-  // { content: "Portal", href: "/portal" },
+  // { content: "Contact", href: "/contact" }
 ];
 
 export default function RootLayout({

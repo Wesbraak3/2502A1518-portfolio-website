@@ -4,18 +4,14 @@ import React, { useState } from "react";
 
 import { HeaderButtons } from '../molecules/HeaderButtons';
 import ThemeSwitch from "../molecules/ThemeSwitch";
+import { LinkedIn, Github } from '../atoms/Socials';
 
 interface HeaderProps {
   buttons?: { content: React.ReactNode; href?: string }[];
 }
 
 export function Header({
-  buttons = [
-    { content: "Home", href: "/" },
-    { content: "About", href: "/about" },
-    { content: "Projects", href: "/projects" },
-    { content: "Contact", href: "/contact" }
-  ]
+  buttons = []
 }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -32,8 +28,13 @@ export function Header({
             <HeaderButtons buttons={buttons} />
           </div>
 
-          {/* Theme toggle on right */}
-          <div className="flex-shrink-0">
+          {/* Right-side actions */}
+          <div className="flex items-center gap-4 flex-shrink-0">
+            <LinkedIn href="https://www.linkedin.com/in/wes-te-braak" />
+            <Github href="https://github.com/Wesbraak3" />
+
+            <div className="w-px h-6 bg-text/30" />
+
             <ThemeSwitch />
           </div>
         </div>
@@ -44,6 +45,9 @@ export function Header({
           <h1 className="text-2xl font-bold">Wes Portfolio</h1>
 
           <div className="flex items-center gap-4">
+            <LinkedIn href="https://www.linkedin.com/in/wes-te-braak" />
+            <Github href="https://github.com/Wesbraak3" />
+
             <ThemeSwitch />
 
             {/* Hamburger Button */}

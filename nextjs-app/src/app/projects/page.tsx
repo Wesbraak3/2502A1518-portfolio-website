@@ -7,7 +7,7 @@ import { Header_1 } from "@/components/atoms/Titles"
 import { ProjectCard } from "@/components/molecules/ProjectCard";
 import { projects } from "@/data/projectsData";
 
-const categories = ["All", "Industrial", "Game dev", "Home"]; 
+const categories = ["All", "Game dev", "Industrial", "Home", "Misc"]; 
 
 export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -43,7 +43,7 @@ export default function ProjectsPage() {
 
       {/* Projects Grid */}
       <section>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {filteredProjects.map((project, index) => (
             <ProjectCard
               key={index}

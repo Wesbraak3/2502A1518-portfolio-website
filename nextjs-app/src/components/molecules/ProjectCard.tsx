@@ -27,18 +27,18 @@ export function ProjectCard({
 
       {/* Content */}
       <div className="p-4 flex flex-col items-center gap-2">
-        <Header_2>{title}</Header_2>
+        <Header_2 className="text-center">{title}</Header_2>
 
-        <Text className="text-xl whitespace-normal break-words">
+        <Text className="text-xl whitespace-normal break-words text-center">
           {description}
         </Text>
 
         <Text className="mt-2">
           See more by clicking{" "}
-          <Hyperlink href={link} target="_blank">
+          {/* <Hyperlink href={link} target="_blank"> */}
             here
-          </Hyperlink>
-          .
+          {/* </Hyperlink> */}
+          . (comming soon)
         </Text>
       </div>
     </div>
