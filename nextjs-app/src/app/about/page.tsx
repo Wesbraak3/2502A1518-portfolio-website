@@ -7,11 +7,11 @@ import { Text } from "@/components/atoms/Text"
 
 export default function AboutPage() {
     return (
-        <div className="w-[80%] text-center mx-auto space-y-6">
+        <div className="w-[80%] text-center mx-auto space-y-6" >
             <Header_1>About Me</Header_1>
             <Text>{Introduction}</Text>
             <Header_1>Profile</Header_1>
-            <Text>{Profile}</Text>
+            <Text className="whitespace-pre-line">{Profile}</Text>
         </div>
     );
 }

@@ -5,7 +5,7 @@ import { Header } from '@/components/organisms/Header'
 
 const NavigationButtons = [
   { content: "Home", href: "/" },
-  { content: "About", href: "/about" },
+  { content: "About Me", href: "/about" },
   { content: "Projects", href: "/projects" },
   // { content: "Contact", href: "/contact" }
 ];
