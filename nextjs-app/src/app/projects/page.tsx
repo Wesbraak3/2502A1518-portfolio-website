@@ -7,7 +7,7 @@ import { Header_1 } from "@/components/atoms/Titles"
 import { ProjectCard } from "@/components/molecules/ProjectCard";
 import { projects } from "@/data/projectsData";
 
-const categories = ["All", "Industrial", "Game dev", "Home"]; 
+const categories = ["All", "Game dev", "Industrial", "Home", "Misc"]; 
 
 export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
