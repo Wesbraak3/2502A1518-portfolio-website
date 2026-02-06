@@ -1,22 +1,8 @@
-export const Introduction = `
-Hi, I'm Wes, a tech consultant in industrial data solutions.
-I love turning raw data into meaningful, visual stories that drive smart decisions.
-Always curious, always learning especially where cloud tech and innovation meet.
-Outside of work, I enjoy side projects, gaming, and getting outdoors.
-`
+export const Introduction = "Hi, I’m Wes. Formerly active in industrial data solutions, I’m currently doing my Bacholers at creative media and game technologies at the Saxion University of science. I’m passionate about turning ideas into engaging experiences, exploring the line between technology and creativity. Outside of learning and creating, I love diving and do so every monday evening."
 
-export const Profile = `
-I have been active for three years at a consultancy firm specializing in supporting companies with
-complex technical installations. During this period, my focus was on developing and implementing
-the Asset Health Monitor. This monitor serves as a valuable tool for determining effective
-maintenance schedules for complex installations.
-My expertise extends to the technological aspects involved in such innovative solutions. In
-particular, I have delved into various components of the Azure cloud platform over the past few
-years. Additionally, I have gained extensive experience in data extraction using protocols such as
-MQTT, HTTP(S), and OPC (UA, DA). It is crucial for me to visualize this raw data and convert it into
-actionable insights for management, technical services, quality control, and operators. I achieve this
-by creating powerful and user-friendly Power BI dashboards.
-My dedication lies in continuously striving for innovation and delivering effective solutions that
-enhance operational efficiency. I always look forward to further developing and applying my
-knowledge and experience in new challenging projects.
+export const Profile = `I have over three years of expertise creating cloud-based, data-driven solutions for intricate technical installations, after working as an industrial data consultant. In order to convert raw system data into understandable, actionable insights using user-friendly Power BI dashboards, I worked extensively on an Asset Health Monitor that included Azure cloud technologies, industrial data protocols (MQTT, HTTP(S), OPC UA/DA), and data visualization. I have a solid basis in system thinking, problem-solving, and developing dependable, scalable technical solutions because to this background.
+
+As a student of Creative Media and Game Technologies, I use my technological expertise in creative and interactive contexts like digital experiences, games, and simulations. Tech-related jobs at the center of software engineering, data, and real-time or interactive systems particularly appeal to me.
+
+I am an active diver in addition to my academic and professional pursuits. My capacity to remain composed under pressure, make meticulous plans, and the ability to maintain a keen awareness of complex settings has all improved as a result of diving, and these abilities are directly applicable to my job. My attitude to technical challenges, teamwork, and problem-solving is similar to the discipline, focus, and respect for systems and safety that diving demands. I approach my tasks with the same mindset: careful planning, unambiguous communication, and consistent execution.
 `

@@ -189,9 +189,9 @@ export const projects = [
     category: "Misc", 
   }
   // {
-  //   title: "Automatic PCB Coating",
+  //   title: "Digitalisation of a Study Ascociation",
   //   image: "/images/.png",
-  //   description: "Developed a control and calibration program for a UV printing system to automatically apply protective green coating to printed circuit boards (PCBs).",
+  //   description: "Creating an digital enviironment where members are managed and one that can be used to communicate to the members via shared calenders or automated email notifications",
   //   link: "/projects/",
   //   date: "2025-06-16",
   //   category: "Misc", 
