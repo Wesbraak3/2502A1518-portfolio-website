@@ -11,10 +11,6 @@ interface HeaderProps {
 
 export function Header({
   buttons = [
-    { content: "Home", href: "/" },
-    { content: "About", href: "/about" },
-    { content: "Projects", href: "/projects" },
-    { content: "Contact", href: "/contact" }
   ]
 }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
