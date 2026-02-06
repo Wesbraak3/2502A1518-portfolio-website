@@ -1,7 +1,1 @@
-node_modules
-.pnpm
-.next
-.git
-Dockerfile
-docker-compose.yml
-*.log
+.env
