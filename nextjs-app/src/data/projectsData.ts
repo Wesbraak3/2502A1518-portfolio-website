@@ -163,8 +163,8 @@ export const projects = [
   },
   {
     id: 19,
-    title: "Ritme Game - Game Jam",
-    image: "/images/Ritme game.png",
+    title: "rhythm Game - Game Jam",
+    image: "/images/rhythm game.png",
     description: "XP 2025 Game Jam project: a rhythm-based dungeon crawler with responsive audio feedback. Awarded Best Sound Design for dynamic and immersive sound implementation.",
     link: "/projects/",
     date: "2025-03-14",
