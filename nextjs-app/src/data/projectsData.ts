@@ -159,4 +159,20 @@ export const projects = [
     date: "2025-06-16",
     category: "Game dev", 
   },
+  {
+    title: "Hour Registration System",
+    image: "/images/Betapool Icon.png",
+    description: "Continued developed for an hour registration system for on-campus student jobs, creating dashboards that provide overview of hours worked and visualize progress.",
+    link: "/projects/",
+    date: "2026-02-16",
+    category: "Misc", 
+  },
+  // {
+  //   title: "Automatic PCB Coating",
+  //   image: "/images/.png",
+  //   description: "Developed a control and calibration program for a UV printing system to automatically apply protective green coating to printed circuit boards (PCBs).",
+  //   link: "/projects/",
+  //   date: "2025-06-16",
+  //   category: "Misc", 
+  // },
 ];
