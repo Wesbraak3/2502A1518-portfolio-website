@@ -29,6 +29,7 @@ export function BannerIMG({ image, alt = 'Banner image' }: BannerIMGProps) {
         src={imgSrc}
         alt={alt}
         fill
+        unoptimized 
         className="object-cover"
         draggable={false}
         onError={handleError}
