@@ -35,10 +35,8 @@ export function ProjectCard({
 
         <Text className="mt-2">
           See more by clicking{" "}
-          {/* <Hyperlink href={link} target="_blank"> */}
-            here
-          {/* </Hyperlink> */}
-          . (comming soon)
+          {/* <Hyperlink href={link} target="_blank"> here </Hyperlink> */}
+          . (coming soon)
         </Text>
       </div>
     </div>
