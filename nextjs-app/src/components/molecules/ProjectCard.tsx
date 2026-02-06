@@ -15,7 +15,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({
   title = "Project Title",
-  image = "/",
+  image = "/PlaceholderImage.svg",
   description = "Description of the project",
   // link = "/",
   className = ""

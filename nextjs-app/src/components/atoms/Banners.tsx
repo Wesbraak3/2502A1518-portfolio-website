@@ -1,5 +1,3 @@
-// components/atoms/Banners.tsx
-
 'use client';
 
 import Image from 'next/image';
@@ -16,8 +14,14 @@ export function BannerIMG({ image, alt = 'Banner image' }: BannerIMGProps) {
   const [imgSrc, setImgSrc] = useState(image || PLACEHOLDER);
 
   useEffect(() => {
-    setImgSrc(image || PLACEHOLDER);
+    if (image && image !== imgSrc) {
+      setImgSrc(image);
+    }
   }, [image]);
+
+  const handleError = () => {
+    if (imgSrc !== PLACEHOLDER) setImgSrc(PLACEHOLDER);
+  };
 
   return (
     <div className="relative w-full h-32 overflow-hidden select-none">
@@ -26,9 +30,8 @@ export function BannerIMG({ image, alt = 'Banner image' }: BannerIMGProps) {
         alt={alt}
         fill
         className="object-cover"
-        priority
         draggable={false}
-        onError={() => setImgSrc(PLACEHOLDER)}
+        onError={handleError}
       />
     </div>
   );

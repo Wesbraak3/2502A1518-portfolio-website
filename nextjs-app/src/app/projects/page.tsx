@@ -44,9 +44,9 @@ export default function ProjectsPage() {
       {/* Projects Grid */}
       <section>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {filteredProjects.map((project, index) => (
+          {filteredProjects.map((project) => (
             <ProjectCard
-              key={index}
+              key={project.id || project.title}
               title={project.title}
               image={project.image}
               description={project.description}
