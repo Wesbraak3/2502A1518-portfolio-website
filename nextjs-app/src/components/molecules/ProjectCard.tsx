@@ -3,7 +3,7 @@ import React from "react";
 import { BannerIMG } from "../atoms/Banners";
 import { Header_2 } from "../atoms/Titles";
 import { Text } from "../atoms/Text";
-import { Hyperlink } from "../atoms/Hyperlink";
+// import { Hyperlink } from "../atoms/Hyperlink";
 
 interface ProjectCardProps {
   title?: string;
@@ -17,7 +17,7 @@ export function ProjectCard({
   title = "Project Title",
   image = "/",
   description = "Description of the project",
-  link = "/",
+  // link = "/",
   className = ""
 }: ProjectCardProps) {
   return (

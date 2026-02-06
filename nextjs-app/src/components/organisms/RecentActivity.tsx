@@ -16,7 +16,7 @@ export function RecentActivity() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {recentProjects.map((project) => (
           <ProjectCard
-            key={project.id || project.title}
+            key={project.title}
             title={project.title}
             image={project.image}
             description={project.description}
