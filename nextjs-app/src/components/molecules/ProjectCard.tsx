@@ -31,7 +31,7 @@ export function ProjectCard({
       <motion.div
         layout
         onClick={() => setOpen(true)}
-        className={`cursor-pointer overflow-hidden rounded-lg border bg-background shadow-md w-full ${className}`}
+        className={`cursor-pointer overflow-hidden rounded-lg border bg-background shadow-md w-full`}
       >
         <BannerIMG image={image} alt={title} />
 
@@ -78,13 +78,13 @@ function ExpandedProject({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        onClick={onClose}
       />
 
       {/* Expanding card */}
       <motion.div
         layout
         className="fixed inset-0 z-50 flex items-center justify-center p-4"
+        onClick={onClose}
       >
         <motion.div
           layout
@@ -92,8 +92,19 @@ function ExpandedProject({
           initial={{ scale: 0.95 }}
           animate={{ scale: 1 }}
           exit={{ scale: 0.95 }}
+          onClick={(e) => e.stopPropagation()} 
         >
+
           <BannerIMG image={image} alt={title} />
+          
+          <motion.button
+            layout={false}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="absolute top-3 right-3 ..."
+          >
+            ✕
+          </motion.button>
 
           <div className="p-6 space-y-4">
             <Header_2>{title}</Header_2>
@@ -106,13 +117,6 @@ function ExpandedProject({
               🔥 Here’s where you add **extra details**, tech stack, links,
               screenshots, etc.
             </Text>
-
-            <button
-              onClick={onClose}
-              className="mt-4 rounded-md border px-4 py-2"
-            >
-              Close
-            </button>
           </div>
         </motion.div>
       </motion.div>
