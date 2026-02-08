@@ -31,7 +31,7 @@ export function ProjectCard({
       <motion.div
         layout
         onClick={() => setOpen(true)}
-        className={`cursor-pointer overflow-hidden rounded-lg border bg-background shadow-md w-full`}
+        className={`cursor-pointer overflow-hidden rounded-lg border bg-background shadow-md w-full select-none`}
       >
         <BannerIMG image={image} alt={title} />
 

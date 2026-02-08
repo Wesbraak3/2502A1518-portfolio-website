@@ -1,10 +1,26 @@
 export const projects = [
   {
     id: 1,
+    information: {
+      title: "Wast-e Waste Sorting",
+      description: "Created a waste-tracking scanner and analytics dashboard to deliver insights into waste disposal behavior and support more sustainable practices",
+      release_data: "2021-04-01",
+      category: "Industrial",
+      contributers: [ ]
+    },
+    visuals: {
+      banner_img: "",
+      hero_icon: ""
+    },
+    project:{ 
+      document: "",
+      git_link: "",
+      latest_build: ""
+    },
+
     title: "Wast-e Waste Sorting",
     image: "/images/Wast-e.png",
     description: "Created a waste-tracking scanner and analytics dashboard to deliver insights into waste disposal behavior and support more sustainable practices",
-    link: "/projects/",
     date: "2021-04-01",
     category: "Industrial",
   },
