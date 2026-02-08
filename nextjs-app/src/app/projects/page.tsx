@@ -1,31 +1,13 @@
 "use client";
 
-import { ProjectCard } from "@/components/molecules/ProjectCard";
-import { projects } from "@/data/projectsData";
-import { useProjects } from "./ProjectsContext";
+import { Header_1 } from "@/components/atoms/Titles";
+import { ProjectsGrid } from "@/components/organisms/ProjectsGrid";
 
 export default function ProjectsPage() {
-  const { selectedCategory } = useProjects();
-
-  const filteredProjects = [...projects]
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .filter(project =>
-      selectedCategory === "All"
-        ? true
-        : project.category === selectedCategory
-    );
-
   return (
-    <section className="grid grid-cols-1 gap-6 md:grid-cols-3">
-      {filteredProjects.map(project => (
-        <ProjectCard
-          key={project.id || project.title}
-          title={project.title}
-          image={project.image}
-          description={project.description}
-          link={project.link}
-        />
-      ))}
-    </section>
+    <div className="w-[80%] mx-auto space-y-6 text-center">
+      <Header_1>Projects</Header_1>
+      <ProjectsGrid />
+    </div>
   );
 }

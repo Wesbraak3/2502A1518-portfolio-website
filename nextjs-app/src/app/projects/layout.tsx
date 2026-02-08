@@ -1,12 +1,14 @@
-import { ProjectsProvider } from "./ProjectsContext";
-import CategorySidebar from "./CategorySidebar";
 import { ReactNode } from "react";
+import { ProjectsProvider } from "@/context/ProjectsContext";
+import CategorySidebar from "@/components/organisms/CategorySidebar";
 
-import { Header_1 } from "@/components/atoms/Titles";
-export default function ProjectsLayout({ children }: { children: ReactNode }) {
+export default function ProjectsLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
     <ProjectsProvider>
-      <Header_1>Projects</Header_1>
       <div className="flex h-screen">
         <aside className="w-64 shrink-0 px-4">
           <div className="sticky top-24">
