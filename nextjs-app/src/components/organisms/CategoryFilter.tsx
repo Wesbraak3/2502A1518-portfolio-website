@@ -11,16 +11,16 @@ const categories: Category[] = [
   "Misc",
 ];
 
-export default function CategorySidebar() {
+export default function CategoryFilter() {
   const { selectedCategory, setSelectedCategory } = useProjects();
 
   return (
-    <aside className="space-y-6">
-      <CategoryList
-        categories={categories}
-        selected={selectedCategory}
-        onSelect={setSelectedCategory}
-      />
-    </aside>
+        <div className="md:flex justify-center">
+          <CategoryList
+            categories={categories}
+            selected={selectedCategory}
+            onSelect={setSelectedCategory}
+          />
+        </div>
   );
 }

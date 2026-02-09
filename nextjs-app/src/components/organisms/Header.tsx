@@ -16,7 +16,7 @@ export function Header({
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full px-6 py-4 bg-background text-text shadow-md mb-8">
+    <header className="w-full px-6 py-4 bg-background text-text shadow-md">
       <div className="max-w-7xl mx-auto w-full">
         {/* Desktop layout */}
         <div className="hidden sm:flex items-center justify-between w-full">

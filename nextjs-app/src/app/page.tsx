@@ -7,7 +7,7 @@ import { RecentActivity } from '@/components/organisms/RecentActivity'
 
 export default function Home() {
   return (
-    <div className="w-[80%] text-center mx-auto space-y-6">
+    <div className="w-[80%] text-center mx-auto space-y-6 pt-4">
       <Header_1>Short Introduction</Header_1>
       <Text>{Introduction}</Text>
       <RecentActivity/>
