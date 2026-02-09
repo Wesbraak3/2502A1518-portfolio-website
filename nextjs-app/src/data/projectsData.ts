@@ -1,21 +1,40 @@
 export const projects = [
   {
+    id: 1,
+    information: {
+      title: "Wast-e Waste Sorting",
+      description: "Created a waste-tracking scanner and analytics dashboard to deliver insights into waste disposal behavior and support more sustainable practices",
+      release_data: "2021-04-01",
+      category: "Industrial",
+      contributers: [ ]
+    },
+    visuals: {
+      banner_img: "",
+      hero_icon: ""
+    },
+    project:{ 
+      document: "",
+      git_link: "",
+      latest_build: ""
+    },
+
     title: "Wast-e Waste Sorting",
     image: "/images/Wast-e.png",
     description: "Created a waste-tracking scanner and analytics dashboard to deliver insights into waste disposal behavior and support more sustainable practices",
-    link: "/projects/",
     date: "2021-04-01",
     category: "Industrial",
   },
   {
+    id: 2,
     title: "Automation Refit",
     image: "/images/Weidmuller PLC.jpg",
-    description: "Led the refit of a 15-year-old automation system, modernizing the control infrastructure and enabling full data logging. making advanced analysis possible and supporting a 24/7 production.",
+    description: "Led the refit of a 15-year-old automation system, modernizing the control infrastructure and enabling full data logging. Making advanced analysis possible and supporting a 24/7 production.",
     link: "/projects/",
     date: "2021-04-02",
     category: "Industrial",
   },
   {
+    id: 3,
     title: "Predictive Maintenance Analysis - Food",
     image: "/images/AutoML Demo.jpg",
     description: "Applied Weidmüller's AutoML tool to analyze production data captured during the automation refit. Improved process efficiency by reducing key ingredient usage by 50% and shortening production times",
@@ -24,6 +43,7 @@ export const projects = [
     category: "Industrial",
   },
   {
+    id: 4,
     title: "Management Dashboard - Food",
     image: "/images/Management Dashboard.png",
     description: "Created an interactive management dashboard providing real-time production insights and enabling proactive decision-making based on automation system data.",
@@ -32,6 +52,7 @@ export const projects = [
     category: "Industrial",
   },
   {
+    id: 5,
     title: "Predictive Maintenance Analysis - Oil",
     image: "/images/AutoML Demo.jpg",
     description: "Applied Weidmüller's AutoML tool to analyze industrial sensor data and predict the health and operational state of critical machine infrastructure.",
@@ -40,6 +61,7 @@ export const projects = [
     category: "Industrial",
   },
   {
+    id: 6,
     title: "Asset Health Monitor",
     image: "/images/AHM Kensan.png",
     description: "Created a real-time asset health monitoring system that tracks machine data to support predictive maintenance and quality control, working towards operational excellence.",
@@ -48,6 +70,7 @@ export const projects = [
     category: "Industrial",
   },
   {
+    id: 7,
     title: "Azure Cloud Environment",
     image: "/images/Azure environment.png",
     description: "Designed a secure cloud-based data pipeline in Azure to ingest, store, and prepare industrial data for analysis and visualization.",
@@ -56,6 +79,7 @@ export const projects = [
     category: "Industrial",
   },
   {
+    id: 8,
     title: "Machine Learning Tooling - Cloud",
     image: "/images/Azure Machine Learning.png",
     description: "Used Azure Machine Learning Studio to analyze industrial data and demonstrate core machine learning principles, including predictive maintenance use cases.",
@@ -64,6 +88,7 @@ export const projects = [
     category: "Industrial",
   },
   {
+    id: 9,
     title: "Demo Dashboarding",
     image: "/images/Grafana Sample.png",
     description: "Developed a sample dashboard using Next.js, Tremor libraries, and Grafana to visualise and showcase how actionable insights can deliver measurable value to customers.",
@@ -72,6 +97,7 @@ export const projects = [
     category: "Industrial",
   },
   {
+    id: 10,
     title: "Machine Learning Tooling - On-Premise",
     image: "/images/Model Creator.png",
     description: "Developed a custom on-premise machine learning tool using scikit-learn to analyze local data and predict machine health and operational status",
@@ -80,38 +106,43 @@ export const projects = [
     category: "Industrial",
   },
   {
+    id: 11,
     title: "Portfolio Website",
     image: "/images/Portfolio webpage.png",
     description: "Built my portfolio website using Next.js, Cloudflare, and atomic design principles.",
     link: "/projects/",
     date: "2025-02-15",
-    category: "Home",
+    category: "Personal",
   },
   {
+    id: 12,
     title: "Finance Interface",
     image: "/images/Finance Overview.png",
     description: "Created an overvieuw for my finances making it easier to analyse my income and spending using Power BI with a custom database",
     link: "/projects/",
     date: "2025-02-20",
-    category: "Home", 
+    category: "Personal", 
   },
   {
+    id: 13,
     title: "Home Lab",
     image: "/images/Home Lab.png",
-    description: "Designed a home lab environment hosting a wide range of servers and services on a self-hosted VPS, allowing me to experement with infrastructure, networking, and service deployment",
+    description: "Designed a Home lab environment hosting a wide range of servers and services on a self-hosted VPS, allowing me to experement with infrastructure, networking, and service deployment",
     link: "/projects/",
     date: "2024-08-15",
-    category: "Home", 
+    category: "Personal", 
   },
   {
+    id: 14,
     title: "Kenny's Escape",
-    image: "/images/Kenny's Escape.png",
-    description: "Application Game, A simple platformer game featuring cloud-stored player scores, with gameplay data visualized using Power BI.",
+    image: "/images/KennysEscape.png",
+    description: "Application Game, a simple platformer game featuring cloud-stored player scores, with gameplay data visualized using Power BI.",
     link: "/projects/",
     date: "2024-04-17",
     category: "Game dev", 
   },
   {
+    id: 15,
     title: "Stranded",
     image: "/images/Stranded.png",
     description: "First semester fundamentals project: a narrative exploration game set on a mysterious island where players solve puzzles to progress.",
@@ -120,6 +151,7 @@ export const projects = [
     category: "Game dev", 
   },
   {
+    id: 16,
     title: "Encoded Infection",
     image: "/images/Encoded Infection.png",
     description: "First semester group project: set on a hostile alien planet after your spaceship crashed. The player collects resources to upgrade defenses and survive escalating waves of enemies.",
@@ -128,6 +160,7 @@ export const projects = [
     category: "Game dev", 
   },
   {
+    id: 17,
     title: "Dungeon Generator",
     image: "/images/Dungeon Generator.png",
     description: "Second semester Algorithms project: focused on designing and implementing a procedural dungeon generator while learning core principles of algorithmes.",
@@ -136,6 +169,7 @@ export const projects = [
     category: "Game dev", 
   },
   {
+    id: 18,
     title: "Magic Morth",
     image: "/images/Magic Morph.png",
     description: "Second semester Game design project: an endless runner where players must correctly match and morph shapes to survive increasingly challenging gameplay.",
@@ -144,33 +178,36 @@ export const projects = [
     category: "Game dev", 
   },
   {
-    title: "Ritme Game - Game Jam",
-    image: "/images/Ritme game.png",
+    id: 19,
+    title: "rhythm Game - Game Jam",
+    image: "/images/rhythm game.png",
     description: "XP 2025 Game Jam project: a rhythm-based dungeon crawler with responsive audio feedback. Awarded Best Sound Design for dynamic and immersive sound implementation.",
     link: "/projects/",
     date: "2025-03-14",
     category: "Game dev", 
   },
   {
+    id: 20,
     title: "Polar Escape",
-    image: "/images/Polar Escape.png",
+    image: "/images/PolarEscape.png",
     description: "Second semester group project: a mobile game where players escape an oil spill by jumping strategically between unstable tiles in a hazardous environment.",
     link: "/projects/",
     date: "2025-06-16",
     category: "Game dev", 
   },
   {
+    id: 21,
     title: "Hour Registration System",
     image: "/images/Betapool Icon.png",
-    description: "Continued developed for an hour registration system for on-campus student jobs, creating dashboards that provide overview of hours worked and visualize progress.",
+    description: "Continued developedment for an hour registration system for on-campus student jobs, creating dashboards that provide overview of hours worked and visualize progress.",
     link: "/projects/",
     date: "2026-02-16",
     category: "Misc", 
-  },
+  }
   // {
-  //   title: "Automatic PCB Coating",
+  //   title: "Digitalisation of a Study Ascociation",
   //   image: "/images/.png",
-  //   description: "Developed a control and calibration program for a UV printing system to automatically apply protective green coating to printed circuit boards (PCBs).",
+  //   description: "Creating an digital enviironment where members are managed and one that can be used to communicate to the members via shared calenders or automated email notifications",
   //   link: "/projects/",
   //   date: "2025-06-16",
   //   category: "Misc", 

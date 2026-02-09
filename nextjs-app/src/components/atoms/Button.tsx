@@ -1,5 +1,7 @@
 // components/atoms/Button.tsx
 
+"use client";
+
 import React from "react";
 import Link from "next/link";
 
@@ -36,3 +38,31 @@ export const Button: React.FC<ButtonProps> = ({
     </button>
   );
 };
+
+
+type Props = {
+  label: string;
+  active: boolean;
+  onClick: () => void;
+};
+
+export function CategoryButton({
+  label,
+  active,
+  onClick,
+}: Props) {
+  return (
+    <button
+      aria-pressed={active}
+      onClick={onClick}
+      className={`px-4 py-2 rounded-full border-2 text-sm text-left transition-colors
+        ${
+          active
+            ? "border-accent bg-accent text-background font-bold"
+            : "border-primary bg-background text-text hover:bg-primary hover:text-background"
+        }`}
+    >
+      {label}
+    </button>
+  );
+}
