@@ -21,7 +21,6 @@ export function ProjectCard({
   title = "Project Title",
   image = "/PlaceholderImage.svg",
   description = "Description of the project",
-  className = ""
 }: ProjectCardProps) {
   const [open, setOpen] = useState(false);
 

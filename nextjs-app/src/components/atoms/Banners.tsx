@@ -14,10 +14,10 @@ export function BannerIMG({ image, alt = 'Banner image' }: BannerIMGProps) {
   const [imgSrc, setImgSrc] = useState(image || PLACEHOLDER);
 
   useEffect(() => {
-    if (image && image !== imgSrc) {
-      setImgSrc(image);
-    }
-  }, [image]);
+  if (image && image !== imgSrc) {
+    setImgSrc(image);
+  }
+}, [image, imgSrc]);
 
   const handleError = () => {
     if (imgSrc !== PLACEHOLDER) setImgSrc(PLACEHOLDER);
