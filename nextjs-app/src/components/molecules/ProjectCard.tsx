@@ -114,8 +114,7 @@ function ExpandedProject({
             </Text>
 
             <Text>
-              🔥 Here’s where you add **extra details**, tech stack, links,
-              screenshots, etc.
+              Soon there will be more information here
             </Text>
           </div>
         </motion.div>
