@@ -1,10 +1,26 @@
 export const projects = [
   {
     id: 1,
+    information: {
+      title: "Wast-e Waste Sorting",
+      description: "Created a waste-tracking scanner and analytics dashboard to deliver insights into waste disposal behavior and support more sustainable practices",
+      release_data: "2021-04-01",
+      category: "Industrial",
+      contributers: [ ]
+    },
+    visuals: {
+      banner_img: "",
+      hero_icon: ""
+    },
+    project:{ 
+      document: "",
+      git_link: "",
+      latest_build: ""
+    },
+
     title: "Wast-e Waste Sorting",
     image: "/images/Wast-e.png",
     description: "Created a waste-tracking scanner and analytics dashboard to deliver insights into waste disposal behavior and support more sustainable practices",
-    link: "/projects/",
     date: "2021-04-01",
     category: "Industrial",
   },
@@ -96,7 +112,7 @@ export const projects = [
     description: "Built my portfolio website using Next.js, Cloudflare, and atomic design principles.",
     link: "/projects/",
     date: "2025-02-15",
-    category: "Home",
+    category: "Personal",
   },
   {
     id: 12,
@@ -105,16 +121,16 @@ export const projects = [
     description: "Created an overvieuw for my finances making it easier to analyse my income and spending using Power BI with a custom database",
     link: "/projects/",
     date: "2025-02-20",
-    category: "Home", 
+    category: "Personal", 
   },
   {
     id: 13,
     title: "Home Lab",
     image: "/images/Home Lab.png",
-    description: "Designed a home lab environment hosting a wide range of servers and services on a self-hosted VPS, allowing me to experement with infrastructure, networking, and service deployment",
+    description: "Designed a Home lab environment hosting a wide range of servers and services on a self-hosted VPS, allowing me to experement with infrastructure, networking, and service deployment",
     link: "/projects/",
     date: "2024-08-15",
-    category: "Home", 
+    category: "Personal", 
   },
   {
     id: 14,

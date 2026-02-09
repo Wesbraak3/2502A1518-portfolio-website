@@ -1,7 +1,13 @@
 import "./globals.css";
 import { ThemeProviders } from '@/components/providers'
+import type { Metadata } from "next";
 
 import { Header } from '@/components/organisms/Header'
+
+export const metadata: Metadata = {
+  title: "Statusloop",
+  description: "Personal portfolio of Wes te Braak",
+};
 
 const NavigationButtons = [
   { content: "Home", href: "/" },
@@ -12,15 +18,15 @@ const NavigationButtons = [
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<
+  {children: React.ReactNode;}
+>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProviders>
           <Header buttons={NavigationButtons} />
-          {children}
+            {children}
         </ThemeProviders>
       </body>
     </html>
